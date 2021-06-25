@@ -1,0 +1,358 @@
+@import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
+
+@media screen {
+}
+
+header{
+    background-image: url(./header\ background.jpeg); 
+    height: 188px;
+}
+
+header>h1{
+    color: rgb(221, 233, 169);
+    text-align: center;
+    padding-top: 70px;
+    font-family:'Courier New', Courier, monospace ;
+    font-weight:bolder;
+
+}
+
+header>h4{
+    text-align: right;
+    padding-right: 110px;
+    color: rgb(20, 20, 20);
+}
+
+
+#aboutme{
+    text-align: center;
+    padding: 80px;
+    background-color: rgb(211, 201, 186);
+    word-spacing: 2px;
+    letter-spacing: 1px;
+	
+}
+
+
+
+#skills{
+    background-color: rgb(185, 221, 221);
+    text-align: center;
+    background-image: linear-gradient(rgb(211, 201, 186),rgb(182, 182, 125),#98d4f3);
+    padding: 10px;
+}
+
+#skills h1{
+    color: rgb(121, 89, 10);
+}
+
+.flex-container {
+    display: grid;    
+	grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); 
+	grid-gap:30px;
+    grid-auto-rows:300px;
+  }
+  
+  .flex-container .a{
+      background-image: url(./web\ devlopment.jpeg);
+      opacity: 0.7;
+	text-align: center;
+	padding-top: 100px;
+  }
+  
+  .flex-container .b{
+    background-image: url(./team\ work.jpeg);
+    opacity: 0.7;  
+	text-align: center;
+	padding-top: 100px;
+  }
+
+  .flex-container .c{
+    background-image: url(./public\ speaking.jpeg);
+    opacity: 0.7;
+	text-align: center;
+	padding-top: 100px;
+   }
+ 
+  .flex-container .d{
+   background-image: url(./content\ writing.jpeg);
+   opacity: 0.7;
+   text-align: center;
+   padding-top: 100px;
+}
+
+.flex-container .f{
+	padding-top: 100px;
+	opacity: .7;
+}
+ 
+.flex-container .g{
+	padding-top: 20px;
+	opacity: .7;
+}
+
+.flex-container .e{
+	color: rgb(202, 106, 125);
+   grid-row-start: 1;
+   grid-row-end: 3;
+	grid-column-start:  4;
+	grid-column-end:6;
+	opacity: 0.7;
+	word-spacing: 2px;
+}
+
+  .flex-container > div {
+background-color: rgb(235, 229, 208);
+    margin: 30px;
+    padding-top:55px;
+   text-align: center;
+    font-size: 30px;
+    align-content: space-around;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+  }
+  .flex-container .e a{
+	  color: rgb(63, 52, 8);
+	  text-decoration: none;
+  }
+.xyz{
+	text-align: center;
+	text-decoration: wavy;
+}
+/* Animation webkit */
+@-webkit-keyframes myfirst
+{
+	0% {margin-left: -235px}
+	90% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+/* Animation */
+@keyframes myfirst
+{
+	0% {margin-left: -235px}
+	70% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+.fish{
+	background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
+	width: 235px;
+	height: 104px;
+	margin-left: -235px;
+	position: absolute;	
+	animation: myfirst 24s;
+	-webkit-animation: myfirst 24s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+}
+
+#fish{
+	top: 120px;
+}
+
+#fish2{
+	top: 260px;
+	animation-delay: 12s;
+	-webkit-animation-delay: 12s;
+}
+
+#form{
+	height: 100%;	
+	background-color: #98d4f3;
+	overflow: hidden;
+	position: relative;
+	
+}
+form{
+	margin: 0 auto;
+	width: 500px;
+	padding-top: 40px;
+	color: white;
+	position: relative;
+	
+	
+}
+label, input, textarea{
+	display: block;	
+}
+input, textarea{
+	width: 500px;	
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 10px;
+	font-family: 'Sniglet', cursive;
+	font-size: 1em;
+	color: #676767;
+	transition: border 0.5s;
+	-webkit-transition: border 0.5s;
+	-moz-transition: border 0.5s;
+	-o-transition: border 0.5s;
+	border: solid 3px #98d4f3;	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	
+}
+input:focus, textarea:focus{
+	border: solid 3px #6396af;	
+}
+
+textarea{
+	height: 100px;	
+	resize: none; 
+	overflow: auto;
+}
+input[type="submit"]{
+	background-color: #F90;
+	color: white;
+	height: 50px;
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 1.29em;
+	font-family: 'Sniglet', cursive;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+input[type="submit"]:hover{
+	background-color: #e58f0e;
+	
+}
+label{
+	font-size: 1.5em;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+.formgroup, .formgroup-active, .formgroup-error{
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 10.5%;
+	transition: background-image 0.7s;
+	-webkit-transition: background-image 0.7s;
+	-moz-transition: background-image 0.7s;
+	-o-transition: background-image 0.7s;
+	width: 566px;
+	padding-top: 2px;
+}
+
+.formgroup{
+	background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif');	
+}
+.formgroup-active{
+	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo.png');
+}
+.formgroup-error{
+	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
+	color: red;
+}
+
+#abcde{
+    background-color: rgb(187, 236, 238);
+    background-image: linear-gradient(#98d4f3 ,rgb(95, 92, 77)) ;
+    padding-top: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+#abcde h3{
+    color: rgb(236, 226, 226);
+}
+
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0px 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+ width: 200px;
+}
+
+.wrapper .button .icon{
+ display: inline-block;
+ height: 60px;
+ width: 60px;
+ text-align: center;
+ border-radius: 50px;
+ box-sizing: border-box;
+ line-height: 60px;
+ transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+ background:#4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+ background:#1DA1F2;
+
+}
+.wrapper .button:nth-child(3):hover .icon{
+ background:#E1306C;
+
+}
+.wrapper .button:nth-child(4):hover .icon{
+ background:#333;
+}
+
+.wrapper .button .icon.i{
+ font-size: 25px;
+ line-height: 60px;
+ transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon.i{
+ color:#fff
+
+}
+
+.wrapper .button span {
+ font-size: 20px;
+ font-weight: 500;
+ line-height:60px ;
+ margin-left:10px;
+}
+
+.wrapper .button a{
+ color: black;
+ text-decoration-line: none;
+}
+
+footer{
+    background-color: rgb(95, 92, 77);
+    text-align: center;
+    height: 35px;
+    padding-top: 17px;
+    border-radius: 10px;
+}
+  
+
+.wer{
+	float: left;
+	margin-top: 140px;
+	margin-left: 10px;
+	padding: 20px;
+	background-color: rgb(175, 240, 240);
+	opacity: .5;
+	border-radius: 40px;
+	min-width: 300px;
+}
+
+.fgh{
+	float: right;
+	margin-top: 140px;
+	margin-right: 10px;
+	padding: 20px;
+	background-color: rgb(175, 240, 240);
+	opacity: .5;
+	border-radius: 40px;
+	min-width: 300px;
+}
